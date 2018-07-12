@@ -105,7 +105,7 @@ public class CreateDivDlg {
         editor.putString("key4", email);
 
         editor.apply();
-        Msg.show(alldivisions);
+//        Msg.show(alldivisions);
 
     }
 
@@ -117,7 +117,7 @@ public class CreateDivDlg {
         String subject = settings.getString("key3", "Mathematics");
         String email = settings.getString("key4", "my Email");
 
-        Msg.show(alldivisions);
+//        Msg.show(alldivisions);
         if(alldivisions.contains("│"))
         {model.Divisions.clear();
             String temp[];

@@ -49,13 +49,6 @@ public class MainActivity extends AppCompatActivity
             TA.numbers[i] = String.format("%d", 5000 + i + 1);
         }
 
-/*        buttonInvert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-*/
         model.LoadDivisions();
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -85,6 +78,16 @@ public class MainActivity extends AppCompatActivity
 
         Date = (TextView) findViewById(R.id.date);
         Date.setText(model.GetDateTimeString());
+
+        buttonInvert = (Button) findViewById(R.id.invert_button);
+        buttonInvert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getApplicationContext(),"Invert Button Clicked", Toast.LENGTH_LONG).show();
+
+            }
+        });
 
         ImageButton imageButton= (ImageButton)view.findViewById(R.id.action_bar_back);
 
@@ -147,10 +150,13 @@ public class MainActivity extends AppCompatActivity
 
                  if (!flag) {
                      goButton.setImageResource(R.drawable.web_cam);
+                     Toast.makeText(getApplicationContext(),"Now it is BLUE", Toast.LENGTH_LONG).show();
                      flag=true;
                  }
+
                  else {
                      goButton.setImageResource(R.drawable.web_cam_red);
+                     Toast.makeText(getApplicationContext(),"Now it is RED", Toast.LENGTH_LONG).show();
                      flag=false;
                  }
              }
