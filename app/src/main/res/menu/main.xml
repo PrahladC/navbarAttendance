@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/teacher_details"
+        android:orderInCategory="100"
+        android:title="TEACHER DETAILS"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/create"
+        android:orderInCategory="100"
+        android:title="CREATE"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/load"
+        android:orderInCategory="100"
+        android:title="LOAD"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/save"
+        android:orderInCategory="100"
+        android:title="SAVE"
+        app:showAsAction="never" />
+
+
+</menu>
